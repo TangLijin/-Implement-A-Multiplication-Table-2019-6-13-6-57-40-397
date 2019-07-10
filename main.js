@@ -35,8 +35,8 @@ function getMultiplyTableByNum(numStart,numEnd){
 	}else if(!ifOutRange){
 		return "number out of range";
 	}
-	else return createMultiplyTable;
+	else return createMultiplyTable(numStart,numEnd);
 }
 
 //module.exports = add;
-module.exports = {ifStartLessEnd,ifOutRange,createMultiplyTable};
+module.exports = {ifStartLessEnd,ifOutRange,createMultiplyTable,getMultiplyTableByNum};
